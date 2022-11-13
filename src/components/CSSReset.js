@@ -12,13 +12,13 @@ export const CSSReset = createGlobalStyle`
     display: flex;
     flex-direction: column;
     min-height: 100%;
-  
-
   }
   body {
     display: flex;
     flex: 1;
     overflow-x: hidden;
+    background-color: ${({ theme }) => theme.backgroundBase};
+    color: ${({ theme }) => theme.textColorBase};
   }
   #__next {
     display: flex;
