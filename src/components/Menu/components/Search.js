@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components"
 
 const StyledSearch = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ const StyledSearch = styled.div`
   width: 100%;
   border-radius: 2px;
   overflow: hidden;
-
+  
   input {
     width: 80%;
     padding: 4px 6px;
@@ -34,24 +34,23 @@ const StyledSearch = styled.div`
   }
 `;
 
-// Home
+// Home 
 // Menu
 // Search
 // Informação sempre desce
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
-  // console.log("Search", valorDaBusca)
-  const valorDaBusca = valorDoFiltro;
-  const setValorDaBusca = setValorDoFiltro;
+    // const [valorDaBusca, setValorDaBusca] = React.useState("Teste");
+    // console.log("Search", valorDaBusca)
+    const valorDaBusca = valorDoFiltro;
+    const setValorDaBusca = setValorDoFiltro;
 
-  return (
-    <StyledSearch>
-      <input
-        type="text"
-        onChange={(e) => setValorDaBusca(e.target.value)}
-        value={valorDaBusca}
-      />
-      <button>🔎</button>
-    </StyledSearch>
-  );
+    return (
+        <StyledSearch>
+            <input type="text" onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
+            <button>
+                🔎
+            </button>
+        </StyledSearch>
+    )
 }

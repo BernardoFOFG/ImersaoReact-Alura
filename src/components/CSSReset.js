@@ -7,6 +7,11 @@ export const CSSReset = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    font-family: sans-serif;
+    background-color: ${({ theme }) => theme.backgroundBase};
+    color: ${({ theme }) => theme.textColorBase};
+  }
   /* NextJS */
   html {
     display: flex;
@@ -16,15 +21,10 @@ export const CSSReset = createGlobalStyle`
   body {
     display: flex;
     flex: 1;
-    overflow-x: hidden;
-    background-color: ${({ theme }) => theme.backgroundBase};
-    color: ${({ theme }) => theme.textColorBase};
   }
   #__next {
     display: flex;
     flex: 1;
-    font-family: 'Roboto', sans-serif !important;
-
   }
   /* Globals */
   button,
