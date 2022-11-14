@@ -36,7 +36,6 @@ function HomePage() {
           display: "flex",
           flexDirection: "column",
           flex: 1,
-          // backgroundColor: "red",
         }}
       >
         {/* Prop Drilling */}
@@ -82,7 +81,7 @@ const StyledBanner = styled.div`
   background-image: url(${({ banner }) => banner});
   background-size: cover;
   background-position: center;
-  height: 240px;
+  height: 230px;
 `;
 function Header() {
   return (
